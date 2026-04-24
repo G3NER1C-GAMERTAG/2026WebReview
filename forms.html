@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="mailto:student@sllboces.org" methon="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="Name" name="Name" placeholder="Jane Doe" required><br>
+
+        <label for="grade">Grade Level:</label>
+        <select name="grade" id="grade" required>
+           <option value="9">Grade 9</option>
+           <option value="10">Grade 10</option>
+           <option value="11">Grade 11</option>
+           <option value="12">Grade 12</option>
+        </select><br>
+
+        <label for="bio">Tell us about yourself:</label>
+        <textarea name="bio" id="bio" rows="4" requied></textarea><br>
+
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree" required>I agree with the terms and conditions.</label><br>
+
+        <p>Select which major you want to pursue</p>
+        <input type="radio" id="colMaj" name="major" value="game" required>
+        <label for="colMaj">Game Design</label>
+        <input type="radio" id="colMaj" name="major" calue="cyber" required>
+        <label for="colMaj">Cybersecurity</label><br>
+
+        <button type="submit">Submit</button>
+  
+    </form>
+</body>
+</html>
